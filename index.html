@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>তোমার জন্য, আমার ভালোবাসা 💌</title>
+
+  <!-- 🌸 বাংলা-বান্ধব Google Fonts (পড়তে সহজ, সুন্দর ও পরিষ্কার) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Baloo+Da+2:wght@400;500;600;700;800&family=Tiro+Bangla:ital@0;1&family=Galada&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🌸 Floating petals background -->
+  <div class="petals" id="petals"></div>
+
+  <!-- ✨ Soft glow orbs -->
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+
+  <!-- 🎵 Music toggle -->
+  <button class="music-btn" id="musicBtn" title="সঙ্গীত চালু/বন্ধ করো">
+    <span class="music-icon">♪</span>
+  </button>
+  <audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ============ SECTION 1: ENVELOPE (Landing) ============ -->
+  <section class="envelope-section" id="envelopeSection">
+    <div class="envelope-wrap">
+      <p class="whisper">একটি চিঠি — শুধু তোমার জন্য</p>
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+        <div class="letter-inside" id="letterInside">
+          <p class="letter-preview">খামটা খুলে দেখো 💌</p>
+        </div>
+        <div class="envelope-front"></div>
+        <div class="envelope-flap" id="flap"></div>
+        <div class="wax-seal">♥</div>
+      </div>
+      <p class="hint">খামের উপর ক্লিক করো ↑</p>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 2: LOVE LETTER ============ -->
+  <section class="letter-section fade-section" id="letterSection">
+    <div class="paper">
+      <div class="paper-ornament">❦</div>
+      <h1 class="letter-title">আমার প্রিয়,</h1>
+      <p class="date-line">— আমার পুরো হৃদয় দিয়ে লেখা —</p>
+
+      <div class="letter-body">
+        <p><span class="drop-cap">হে</span>ই Nuha,</p>
+        <p>
+          তুমি আমার কাছে কতটা স্পেশাল, সেটা তোমাকে কীভাবে বলব ভাবছিলাম। কিন্তু ফোনের স্ক্রিনের সাধারণ কিছু শব্দ আমার কাছে যথেষ্ট মনে হয়নি। তাই ইন্টারনেটের এই ছোট্ট কোণে তোমার জন্য একটা আলাদা পৃথিবী তৈরি করলাম — যেটা শুধুই তোমার।
+        </p>
+        <p>
+          প্রতিটি ছবিতে জড়িয়ে আছে এমন কিছু মুহূর্ত, যা আমি কখনো ভুলতে চাই না। প্রতিটি লাইনে আমার সত্যিকারের অনুভূতি লুকিয়ে আছে। তুমি আমার হৃদয়ের সবচেয়ে কোমল আর নিরাপদ আশ্রয়।
+        </p>
+        <p>
+          নিচে স্ক্রোল করো, ভালোবাসা — আমাদের আরও অনেক স্মৃতি অপেক্ষা করছে। 🌹
+        </p>
+        <p class="signature">— সবসময় তোমারই</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3: POLAROID GALLERY ============ -->
+  <section class="gallery-section fade-section">
+    <h2 class="section-title">আমাদের ছোট্ট মুহূর্তগুলো</h2>
+    <p class="section-sub">— সময়ের ফ্রেমে বন্দী, চিরকাল আমাদের —</p>
+
+    <div class="polaroid-board">
+      <div class="polaroid" style="--r:-6deg">
+        <img src="assets/photo1.jpg" alt="us" />
+        <p>যেদিন সব শুরু হয়েছিল🙃</p>
+      </div>
+      <div class="polaroid" style="--r:4deg">
+        <img src="assets/photo2.jpg" alt="us" />
+        <p>তোমার হাসি আমার প্রিয় শব্দ😊</p>
+      </div>
+      <div class="polaroid" style="--r:-3deg">
+        <img src="assets/photo3.jpg" alt="us" />
+        <p>শাড়িতে তুমি 😩</p>
+      </div>
+      <div class="polaroid" style="--r:5deg">
+        <img src="assets/photo4.jpg" alt="us" />
+        <p>বৃষ্টির দিন, উষ্ণ হৃদয🫀়</p>
+      </div>
+      <div class="polaroid" style="--r:-4deg">
+        <img src="assets/photo5.jpg" alt="us" />
+        <p>তুমি, এবং শুধুই তুমি😘</p>
+      </div>
+      <div class="polaroid" style="--r:6deg">
+        <img src="assets/photo6.jpg" alt="us" />
+        <p>চিরকাল তোমার সাথে🤗</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 4: VIDEO ============ -->
+  <section class="video-section fade-section">
+    <h2 class="section-title">চলমান কিছু স্মৃতি</h2>
+    <p class="section-sub">— শাড়িতে তুমি😫 —</p>
+
+    <div class="video-frame">
+      <video controls poster="assets/video-poster.jpg">
+        <source src="assets/our-video.mp4" type="video/mp4" />
+        আপনার ব্রাউজার এই ভিডিও চালাতে পারছে না।
+      </video>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 5: REASONS I LOVE YOU ============ -->
+  <section class="reasons-section fade-section">
+    <h2 class="section-title">তোমাকে ভালোবাসার কারণগুলো</h2>
+    <p class="section-sub">— প্রতিটি কার্ডে ক্লিক করো, ভালোবাসা —</p>
+
+    <div class="cards-grid">
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><span>০১</span></div>
+        <div class="flip-back"><p>তোমার একটা হাসি আমার সারাদিনের সব ক্লান্তি দূর করে দিতে পারে।</p></div>
+      </div></div>
+
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><span>০২</span></div>
+        <div class="flip-back"><p>তুমি যেভাবে আমার নাম ধরে ডাকো — অন্য কেউ এমন মায়ায় ডাকতে পারে না।</p></div>
+      </div></div>
+
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><span>০৩</span></div>
+        <div class="flip-back"><p>তুমি আমার কথা শোনো — সবসময় খুব ধৈর্য নিয়ে, মন দিয়ে।</p></div>
+      </div></div>
+
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><span>০৪</span></div>
+        <div class="flip-back"><p>তোমার মনটা আমার চেনা পৃথিবীর সবচেয়ে কোমল জিনিস।</p></div>
+      </div></div>
+
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><span>০৫</span></div>
+        <div class="flip-back"><p>তোমার কারণে আমার সাধারণ দিনগুলোও সিনেমার কোনো সুন্দর দৃশ্যের মতো মনে হয়।</p></div>
+      </div></div>
+
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><span>০৬</span></div>
+        <div class="flip-back"><p>তোমার নীরবতাও আমাকে জড়িয়ে রাখার মতো উষ্ণতা দেয়।</p></div>
+      </div></div>
+
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><span>০৭</span></div>
+        <div class="flip-back"><p>যেদিন আমি নিজের উপর বিশ্বাস হারিয়ে ফেলি, সেদিনও তুমি আমাকে বিশ্বাস করো।</p></div>
+      </div></div>
+
+      <div class="flip-card"><div class="flip-inner">
+        <div class="flip-front"><span>০৮</span></div>
+        <div class="flip-back"><p>কারণ তুমি শুধুই তুমি — আর এটাই আমার জন্য সবকিছু।</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 6: ENDING ============ -->
+  <section class="ending-section fade-section">
+    <div class="ending-inner">
+      <div class="ornament-top">✦ ❦ ✦</div>
+      <h2>আর এটা তো কেবল শুরু...</h2>
+      <p class="ending-line">তোমার সাথে কাটানো প্রতিটি দিন নতুন একটা গল্পের পাতা লেখে। 🌹</p>
+      <div class="heart-pulse">♥</div>
+      <p class="signature-final">— You are mine Nuha</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
